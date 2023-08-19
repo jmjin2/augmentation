@@ -19,7 +19,6 @@ if __name__ == '__main__':
         for file in files:
             if file.endswith(".mp4"):
                 input_path = os.path.join(root, file)
-                # Get the relative path from inputDir
                 output_subdir = os.path.relpath(root, opt.inputDir)
                 output_dir = os.path.join(opt.outputDir, output_subdir)
                 os.makedirs(output_dir, exist_ok=True)

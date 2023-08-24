@@ -44,7 +44,7 @@ if __name__ == '__main__':
                     x1 = random.randint(0, frame_size[0])
                     x2 = random.randint(x1, frame_size[0])
 
-                    frame[y1:y2, x1:x2] = 0
+                    frame[y1:y2, x1:x2] = 128
 
                     out.write(frame)
                     cv2.imshow('Random Erased Video', frame)

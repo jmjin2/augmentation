@@ -11,7 +11,7 @@ for input_file in "$input_root_dir"/*.mp4; do
     
     output_file="$output_dir/$filename"_grayscale.mp4
     
-    ffmpeg -i "$input_file" -vf "hue=s=0" -c:a copy "$output_file"
+    ffmpeg -i "$input_file" -vf "format=gray" -c:a copy "$output_file"
 done
 
 echo "grayscale complete"
